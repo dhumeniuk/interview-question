@@ -2,6 +2,11 @@
 
 Update the source file in the `challenge1/src` folder to make the JUnit 4 tests in the `challenge1/test` folder pass.
 
+## Eclipse
+
+Workspace contains Eclipse projects `challenge1` and `deps`. You will need to import both projects into Eclipse in order 
+for the Java files to copmile. Additional setup will be required for other IDEs.
+
 ## Submitting Your Changes
 
 Once you have the tests passing, use [git triangular workflow](https://www.sociomantic.com/blog/2014/05/git-triangular-workflow/)
