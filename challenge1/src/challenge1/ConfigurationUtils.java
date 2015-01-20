@@ -1,17 +1,3 @@
-//==============================================================================
-//                      UNCLASSIFIED
-//==============================================================================
-// Developed by L-3 Communications, Nova Engineering 2011
-// Distribution authorized to U.S. Government agencies and their contractors;
-// administrative/operational use, July 2011.
-// Other requests for this software must be referred to:
-// JUIAF
-// ATTN:  DIA/DT
-// 2460 Defense Way
-// Charlottesville, VA 22911
-//==============================================================================
-//                       UNCLASSIFIED
-//==============================================================================
 package challenge1;
 
 import java.util.Dictionary;
