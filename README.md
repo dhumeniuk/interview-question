@@ -1,14 +1,14 @@
 # Interview Question
 
-Update the source file in the `src` folder to make the tests in the `test` folder pass.
+Update the source file in the `challenge1/src` folder to make the JUnit 4 tests in the `challenge1/test` folder pass.
 
 ## Submitting Your Changes
 
-Use [git triangular workflow](https://www.sociomantic.com/blog/2014/05/git-triangular-workflow/).
-This means you push contributions directly into the [main repo](https://github.com/dhumeniuk/interview-question). 
-All changes come in through pull requests. So you will need to [fork the main repo](https://github.com/dhumeniuk/interview-question/fork)
-on GitHub. All contributions are made as commits to your fork. Then you submit a pull request to 
-have the change visible.
+Once you have the tests passing, use [git triangular workflow](https://www.sociomantic.com/blog/2014/05/git-triangular-workflow/)
+to submit your implementation. This means you push contributions directly into the [main 
+repo](https://github.com/dhumeniuk/interview-question). All changes come in through pull requests. So you 
+will need to [fork the main repo](https://github.com/dhumeniuk/interview-question/fork) on GitHub. All
+contributions are made as commits to your fork. Then you submit a pull request to have the change visible.
 
 ### Setting up the triangular workflow
 
