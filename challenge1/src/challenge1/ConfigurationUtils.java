@@ -49,8 +49,7 @@ public final class ConfigurationUtils
 			try {
 				return constructor.newInstance( (paramType == char.class) ? value.charAt(0) : value);
 				
-			} catch (InstantiationException | IllegalAccessException
-					| IllegalArgumentException | InvocationTargetException e) {
+			} catch (InstantiationException | IllegalAccessException | InvocationTargetException e) {
 				
 				return null;
 			}
@@ -102,7 +101,7 @@ public final class ConfigurationUtils
     			return Boolean.class;
     			
     		default:
-    			return null;
+    			throw  new IllegalArgumentException();// throwing unchecked exception...
     	}
     }
     	
