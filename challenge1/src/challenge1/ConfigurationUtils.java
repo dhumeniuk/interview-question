@@ -128,7 +128,6 @@ public final class ConfigurationUtils
 	 *    x = 0                    1 occurrence required
      */
     
-    @SuppressWarnings({"unchecked"})
     public static Object parseStringsByType(final int type, final int cardinality, final String[] values)
     {
         if(cardinality == Integer.MIN_VALUE){
@@ -138,13 +137,13 @@ public final class ConfigurationUtils
         	return getVector(type, Math.abs(cardinality), values);
         	
         }else if(cardinality > 0){
-        	return ((Vector<Object>)getVector(type, cardinality, values)).toArray();
+        	return (getVector(type, cardinality, values)).toArray();
         	
         }else if(cardinality == Integer.MAX_VALUE){
-        	return ((Vector<Object>)getVector(type, values.length, values)).toArray();
+        	return (getVector(type, values.length, values)).toArray();
         
         }else if(cardinality == 0){
-        	return ((Vector<Object>)getVector(type, 1, values)).toArray()[0];
+        	return (getVector(type, 1, values)).toArray()[0];
         	
         }else
         	return null;
@@ -161,7 +160,7 @@ public final class ConfigurationUtils
      * @return
      * 	Returns a reference to the created "typed" vector.
      */
-    public static Object getVector(final int type, final int length, final String[] values){
+    public static Vector<Object> getVector(final int type, final int length, final String[] values){
     	Vector<Object> vector = new Vector<>();
     	
     	for(int i = 0; (i < length)&&(i < values.length); i++)
