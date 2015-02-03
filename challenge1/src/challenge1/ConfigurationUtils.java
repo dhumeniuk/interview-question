@@ -38,11 +38,8 @@ public final class ConfigurationUtils
     
     public static Object parseStringByType(final int type, final String value)
     {
-    	Class paramType = String.class;
+    	Class paramType = (type == AttributeDefinition.CHARACTER) ? char.class : String.class;
     	    	   	   			
-    	if( type == AttributeDefinition.CHARACTER )
-    		paramType = char.class;
-    	
     	try {
     		Class cls = convertToClassType(type);
     		Constructor constructor = cls.getConstructor(new Class[]{paramType});
